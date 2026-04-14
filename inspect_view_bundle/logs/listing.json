@@ -1,0 +1,452 @@
+{
+  "2026-04-13T04-20-00-00-00_scientific-coding-benchmark_MG5oQuwsYxFUVGiEYGtPqF.eval": {
+    "eval_id": "nMawd5tGWDjZVpUQ2aXJqo",
+    "run_id": "5P5Q2RmKwZppeebxnTEmBJ",
+    "task": "scientific_coding_benchmark",
+    "task_id": "MG5oQuwsYxFUVGiEYGtPqF",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "google/gemini-3.1-pro-preview-customtools",
+    "started_at": "2026-04-13T04:20:00+00:00",
+    "completed_at": "2026-04-13T04:32:46+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 0.75,
+      "params": {}
+    }
+  },
+  "2026-04-12T21-25-39-00-00_scientific-coding-benchmark_7yjjd6ZLKmUgyHfTPpzhPF.eval": {
+    "eval_id": "862yjRMqd5gGyMwstjWf5q",
+    "run_id": "YWZiFUgtN3D4BsmPLJszQt",
+    "task": "scientific_coding_benchmark",
+    "task_id": "7yjjd6ZLKmUgyHfTPpzhPF",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "google/gemini-3.1-pro-preview-customtools",
+    "started_at": "2026-04-12T21:25:39+00:00",
+    "completed_at": "2026-04-12T22:27:21+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 0.75,
+      "params": {}
+    }
+  },
+  "2026-04-12T19-30-05-00-00_scientific-coding-benchmark_FRXs3S82hsZRa53FQ2hy9D.eval": {
+    "eval_id": "ghDVsqdB78zjWk7q52bZ26",
+    "run_id": "f3uQy4qWCewVmAVgCx7W5m",
+    "task": "scientific_coding_benchmark",
+    "task_id": "FRXs3S82hsZRa53FQ2hy9D",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "anthropic/claude-opus-4-6",
+    "started_at": "2026-04-12T19:30:05+00:00",
+    "completed_at": "2026-04-12T20:09:52+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 0.25,
+      "params": {}
+    }
+  },
+  "2026-04-12T19-25-54-00-00_scientific-coding-benchmark_jDxJxfGdfUaJxo6HDpEPpg.eval": {
+    "eval_id": "ST4PgXMmyQmQr6dYb6njJk",
+    "run_id": "9XjkC2VJdhQz6mon6f9XqY",
+    "task": "scientific_coding_benchmark",
+    "task_id": "jDxJxfGdfUaJxo6HDpEPpg",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "anthropic/claude-opus-4-6",
+    "started_at": "2026-04-12T19:25:54+00:00",
+    "completed_at": "2026-04-12T19:26:06+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 0.0,
+      "params": {}
+    }
+  },
+  "2026-04-12T19-25-07-00-00_scientific-coding-benchmark_JFYSFTSaRrRwcy47EZ3cz5.eval": {
+    "eval_id": "kPzsckQtKrgu7mHd3EQFr2",
+    "run_id": "kthtG84xLckNqb9N7ZbFrG",
+    "task": "scientific_coding_benchmark",
+    "task_id": "JFYSFTSaRrRwcy47EZ3cz5",
+    "task_version": 0,
+    "version": 2,
+    "status": "error",
+    "invalidated": false,
+    "error": {
+      "message": "RuntimeError('No services started.\\nCompose up stderr:  Image inspect-scientific_c-ilpbazp-default Building \\n Image inspect-scientific_c-ilpbazp-default Built \\n Container inspect-scientific_c-ilpbazp-default-1 Creating \\n Container inspect-scientific_c-ilpbazp-default-1 Created \\n Container inspect-scientific_c-ilpbazp-default-1 Starting \\n Container inspect-scientific_c-ilpbazp-default-1 Started \\n Container inspect-scientific_c-ilpbazp-default-1 Waiting \\ncontainer inspect-scientific_c-ilpbazp-default-1 exited (0)\\n')",
+      "traceback": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/run.py\", line 479, in task_run\n    sample_results = await tg_collect(\n                     ^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/_util/_async.py\", line 76, in tg_collect\n    raise ex.exceptions[0] from None\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/_util/_async.py\", line 64, in run_task\n    result = await func()\n             ^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/run.py\", line 447, in run_sample\n    return await task_run_sample(\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/run.py\", line 1258, in task_run_sample\n    raise raise_error\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/run.py\", line 866, in task_run_sample\n    async with sandboxenv_cm:\n  File \"/usr/lib/python3.12/contextlib.py\", line 210, in __aenter__\n    return await anext(self.gen)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/sandbox.py\", line 101, in sandboxenv_context\n    environments = await init_sandbox_environments_sample(\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/util/_sandbox/context.py\", line 254, in init_sandbox_environments_sample\n    environments = await sample_init(task_name, config, metadata)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/util/_sandbox/docker/docker.py\", line 237, in sample_init\n    raise ex\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/util/_sandbox/docker/docker.py\", line 199, in sample_init\n    raise RuntimeError(\nRuntimeError: No services started.\nCompose up stderr:  Image inspect-scientific_c-ilpbazp-default Building \n Image inspect-scientific_c-ilpbazp-default Built \n Container inspect-scientific_c-ilpbazp-default-1 Creating \n Container inspect-scientific_c-ilpbazp-default-1 Created \n Container inspect-scientific_c-ilpbazp-default-1 Starting \n Container inspect-scientific_c-ilpbazp-default-1 Started \n Container inspect-scientific_c-ilpbazp-default-1 Waiting \ncontainer inspect-scientific_c-ilpbazp-default-1 exited (0)\n\n",
+      "traceback_ansi": "\u001b[31m┌─\u001b[0m\u001b[31m────────────────────\u001b[0m\u001b[31m \u001b[0m\u001b[1;31mTraceback \u001b[0m\u001b[1;2;31m(most recent call last)\u001b[0m\u001b[31m \u001b[0m\u001b[31m────────────────────\u001b[0m\u001b[31m─┐\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/\u001b[0m\u001b[1mrun.py\u001b[0m:479 in \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m task_run                                                                    \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/_util/\u001b[0m\u001b[1m_async.py\u001b[0m:76 in    \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m tg_collect                                                                  \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/_util/\u001b[0m\u001b[1m_async.py\u001b[0m:64 in    \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m run_task                                                                    \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/\u001b[0m\u001b[1mrun.py\u001b[0m:447 in \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m run_sample                                                                  \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/\u001b[0m\u001b[1mrun.py\u001b[0m:1258   \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m in task_run_sample                                                          \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/\u001b[0m\u001b[1mrun.py\u001b[0m:866 in \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m task_run_sample                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/lib/python3.12/\u001b[0m\u001b[1mcontextlib.py\u001b[0m:210 in __aenter__                         \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m   \u001b[2m207 \u001b[0m\u001b[2m│   │   \u001b[0m\u001b[2m# they are only needed for recreation, which is not possible \u001b[0m \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m   \u001b[2m208 \u001b[0m\u001b[2m│   │   \u001b[0m\u001b[94mdel\u001b[0m \u001b[96mself\u001b[0m.args, \u001b[96mself\u001b[0m.kwds, \u001b[96mself\u001b[0m.func                           \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m   \u001b[2m209 \u001b[0m\u001b[2m│   │   \u001b[0m\u001b[94mtry\u001b[0m:                                                          \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[31m> \u001b[0m210 \u001b[2m│   │   │   \u001b[0m\u001b[94mreturn\u001b[0m \u001b[94mawait\u001b[0m anext(\u001b[96mself\u001b[0m.gen)                              \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m   \u001b[2m211 \u001b[0m\u001b[2m│   │   \u001b[0m\u001b[1;4;94mexcept\u001b[0m\u001b[1;4m \u001b[0m\u001b[1;4;96mStopAsyncIteration\u001b[0m\u001b[1;4m:\u001b[0m                                    \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m   \u001b[2m212 \u001b[0m\u001b[2m│   │   │   \u001b[0m\u001b[1;4;94mraise\u001b[0m\u001b[1;4m \u001b[0m\u001b[1;4;96mRuntimeError\u001b[0m\u001b[1;4m(\u001b[0m\u001b[1;4;33m\"\u001b[0m\u001b[1;4;33mgenerator didn\u001b[0m\u001b[1;4;33m'\u001b[0m\u001b[1;4;33mt yield\u001b[0m\u001b[1;4;33m\"\u001b[0m\u001b[1;4m) \u001b[0m\u001b[1;4;94mfrom\u001b[0m\u001b[1;4;90m \u001b[0m\u001b[1;4;94mNone\u001b[0m    \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m   \u001b[2m213 \u001b[0m                                                                      \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/\u001b[0m\u001b[1msandbox.py\u001b[0m:10 \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m 1 in sandboxenv_context                                                     \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/util/_sandbox/\u001b[0m\u001b[1mcontext.py\u001b[0m \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m :254 in init_sandbox_environments_sample                                    \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/util/_sandbox/docker/\u001b[0m\u001b[1mdoc\u001b[0m \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[1mker.py\u001b[0m:237 in sample_init                                                   \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/util/_sandbox/docker/\u001b[0m\u001b[1mdoc\u001b[0m \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[1mker.py\u001b[0m:199 in sample_init                                                   \u001b[31m│\u001b[0m\n\u001b[31m└─────────────────────────────────────────────────────────────────────────────┘\u001b[0m\n\u001b[1;91mRuntimeError: \u001b[0mNo services started.\nCompose up stderr:  Image inspect-scientific_c-ilpbazp-default Building \n Image inspect-scientific_c-ilpbazp-default Built \n Container inspect-scientific_c-ilpbazp-default-\u001b[1;36m1\u001b[0m Creating \n Container inspect-scientific_c-ilpbazp-default-\u001b[1;36m1\u001b[0m Created \n Container inspect-scientific_c-ilpbazp-default-\u001b[1;36m1\u001b[0m Starting \n Container inspect-scientific_c-ilpbazp-default-\u001b[1;36m1\u001b[0m Started \n Container inspect-scientific_c-ilpbazp-default-\u001b[1;36m1\u001b[0m Waiting \ncontainer inspect-scientific_c-ilpbazp-default-\u001b[1;36m1\u001b[0m exited \u001b[1m(\u001b[0m\u001b[1;36m0\u001b[0m\u001b[1m)\u001b[0m\n\n"
+    },
+    "model": "anthropic/claude-opus-4-6",
+    "started_at": "2026-04-12T19:25:07+00:00",
+    "completed_at": "2026-04-12T19:25:09+00:00"
+  },
+  "2026-04-13T04-19-40-00-00_scientific-coding-benchmark_cuJEV3JEzRr4cntMu7un7f.eval": {
+    "eval_id": "Myo4dYD9zMgYeTJQhXToT6",
+    "run_id": "gwvFTFcKqj23Dyu8RBPoZK",
+    "task": "scientific_coding_benchmark",
+    "task_id": "cuJEV3JEzRr4cntMu7un7f",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "openai/gpt-5.4",
+    "started_at": "2026-04-13T04:19:40+00:00",
+    "completed_at": "2026-04-13T04:28:55+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 0.75,
+      "params": {}
+    }
+  },
+  "2026-04-13T04-19-19-00-00_scientific-coding-benchmark_S9vg8pY7bUvoxeqpsxEgYR.eval": {
+    "eval_id": "F5pVxKebQphCaQboCTLeSd",
+    "run_id": "KFZHLXQg4dJQbiqapNBj7p",
+    "task": "scientific_coding_benchmark",
+    "task_id": "S9vg8pY7bUvoxeqpsxEgYR",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "google/gemini-3.1-pro-preview-customtools",
+    "started_at": "2026-04-13T04:19:19+00:00",
+    "completed_at": "2026-04-13T04:42:10+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 0.75,
+      "params": {}
+    }
+  },
+  "2026-04-13T02-40-51-00-00_scientific-coding-benchmark_dF9vUsNBXLMz29ZZKFhkyV.eval": {
+    "eval_id": "YKTPteXuLrYP2Ha7VLpnXi",
+    "run_id": "D3EtbvHNTuTK5m5Z2Y5Psr",
+    "task": "scientific_coding_benchmark",
+    "task_id": "dF9vUsNBXLMz29ZZKFhkyV",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "google/gemini-3.1-pro-preview-customtools",
+    "started_at": "2026-04-13T02:40:51+00:00",
+    "completed_at": "2026-04-13T02:57:46+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 0.75,
+      "params": {}
+    }
+  },
+  "2026-04-13T02-40-34-00-00_scientific-coding-benchmark_j7aWGoFYsAbFtmA6U8toER.eval": {
+    "eval_id": "YFDg85omtutzC6Goagmq2m",
+    "run_id": "kpyKvE32atNGFqzjjPxiYw",
+    "task": "scientific_coding_benchmark",
+    "task_id": "j7aWGoFYsAbFtmA6U8toER",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "google/gemini-3.1-pro-preview-customtools",
+    "started_at": "2026-04-13T02:40:34+00:00",
+    "completed_at": "2026-04-13T02:55:12+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 0.75,
+      "params": {}
+    }
+  },
+  "2026-04-13T02-41-14-00-00_scientific-coding-benchmark_YAD4ujn9Em3qQUP6Xru7DP.eval": {
+    "eval_id": "SffgiPbPapbWxVwMcQxJZs",
+    "run_id": "BFcZE3YLNb8BSxGyZz9ouG",
+    "task": "scientific_coding_benchmark",
+    "task_id": "YAD4ujn9Em3qQUP6Xru7DP",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "openai/gpt-5.4",
+    "started_at": "2026-04-13T02:41:14+00:00",
+    "completed_at": "2026-04-13T03:29:58+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 0.75,
+      "params": {}
+    }
+  },
+  "2026-04-13T03-00-45-00-00_scientific-coding-benchmark_fv27zeXXAxr8hUeqQ36wfY.eval": {
+    "eval_id": "m7YqLBpa3MSCXHsu4y68qw",
+    "run_id": "MqtUqniY5AVjK9eL2bssBX",
+    "task": "scientific_coding_benchmark",
+    "task_id": "fv27zeXXAxr8hUeqQ36wfY",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "openai/gpt-5.4",
+    "started_at": "2026-04-13T03:00:45+00:00",
+    "completed_at": "2026-04-13T03:08:37+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 0.75,
+      "params": {}
+    }
+  },
+  "2026-04-13T02-40-30-00-00_scientific-coding-benchmark_c9jUHMm3x2wr59zWF5PXUX.eval": {
+    "eval_id": "BT5uRmkDxpqUryaLZAysyy",
+    "run_id": "kBGHjVhNiDy6zo3JLGEdyk",
+    "task": "scientific_coding_benchmark",
+    "task_id": "c9jUHMm3x2wr59zWF5PXUX",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "openai/gpt-5.4",
+    "started_at": "2026-04-13T02:40:30+00:00",
+    "completed_at": "2026-04-13T02:46:26+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 0.75,
+      "params": {}
+    }
+  },
+  "2026-04-13T03-11-49-00-00_scientific-coding-benchmark_5j9ZnFDVMeAA4FUQ6V23kv.eval": {
+    "eval_id": "Ua8CFbUULSfQhQ633tfJKN",
+    "run_id": "EEZPnEGWTAoj9vUwF5aC23",
+    "task": "scientific_coding_benchmark",
+    "task_id": "5j9ZnFDVMeAA4FUQ6V23kv",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "anthropic/claude-opus-4-6",
+    "started_at": "2026-04-13T03:11:49+00:00",
+    "completed_at": "2026-04-13T04:05:43+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 1.0,
+      "params": {}
+    }
+  },
+  "2026-04-13T02-40-38-00-00_scientific-coding-benchmark_eZAQ4NQS3ebY87PsNypbdX.eval": {
+    "eval_id": "mkXjYuQNemweMB8RaQNybL",
+    "run_id": "h5RxxyBdySeeQfUfHJBP6G",
+    "task": "scientific_coding_benchmark",
+    "task_id": "eZAQ4NQS3ebY87PsNypbdX",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "anthropic/claude-opus-4-6",
+    "started_at": "2026-04-13T02:40:38+00:00",
+    "completed_at": "2026-04-13T03:39:56+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 1.0,
+      "params": {}
+    }
+  },
+  "2026-04-13T03-00-11-00-00_scientific-coding-benchmark_YqH37AwQLajJP7cYNYEbvz.eval": {
+    "eval_id": "akPVQzzFvzVfo5jFdxFyUh",
+    "run_id": "WF2A4wvqbpPDK5gubfcfRo",
+    "task": "scientific_coding_benchmark",
+    "task_id": "YqH37AwQLajJP7cYNYEbvz",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "anthropic/claude-opus-4-6",
+    "started_at": "2026-04-13T03:00:11+00:00",
+    "completed_at": "2026-04-13T03:42:20+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 1.0,
+      "params": {}
+    }
+  },
+  "2026-04-13T02-39-35-00-00_scientific-coding-benchmark_apK68b6GwxosLCikthmC9X.eval": {
+    "eval_id": "N7tduKeue6ZfyhVGsRtWLq",
+    "run_id": "fZ9jmRgFyx5NndcGEGdhgN",
+    "task": "scientific_coding_benchmark",
+    "task_id": "apK68b6GwxosLCikthmC9X",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "anthropic/claude-opus-4-6",
+    "started_at": "2026-04-13T02:39:35+00:00",
+    "completed_at": "2026-04-13T03:09:30+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 1.0,
+      "params": {}
+    }
+  },
+  "logs/2026-04-12T19-25-07-00-00_scientific-coding-benchmark_JFYSFTSaRrRwcy47EZ3cz5.eval": {
+    "eval_id": "kPzsckQtKrgu7mHd3EQFr2",
+    "run_id": "kthtG84xLckNqb9N7ZbFrG",
+    "task": "scientific_coding_benchmark",
+    "task_id": "JFYSFTSaRrRwcy47EZ3cz5",
+    "task_version": 0,
+    "version": 2,
+    "status": "error",
+    "invalidated": false,
+    "error": {
+      "message": "RuntimeError('No services started.\\nCompose up stderr:  Image inspect-scientific_c-ilpbazp-default Building \\n Image inspect-scientific_c-ilpbazp-default Built \\n Container inspect-scientific_c-ilpbazp-default-1 Creating \\n Container inspect-scientific_c-ilpbazp-default-1 Created \\n Container inspect-scientific_c-ilpbazp-default-1 Starting \\n Container inspect-scientific_c-ilpbazp-default-1 Started \\n Container inspect-scientific_c-ilpbazp-default-1 Waiting \\ncontainer inspect-scientific_c-ilpbazp-default-1 exited (0)\\n')",
+      "traceback": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/run.py\", line 479, in task_run\n    sample_results = await tg_collect(\n                     ^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/_util/_async.py\", line 76, in tg_collect\n    raise ex.exceptions[0] from None\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/_util/_async.py\", line 64, in run_task\n    result = await func()\n             ^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/run.py\", line 447, in run_sample\n    return await task_run_sample(\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/run.py\", line 1258, in task_run_sample\n    raise raise_error\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/run.py\", line 866, in task_run_sample\n    async with sandboxenv_cm:\n  File \"/usr/lib/python3.12/contextlib.py\", line 210, in __aenter__\n    return await anext(self.gen)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/sandbox.py\", line 101, in sandboxenv_context\n    environments = await init_sandbox_environments_sample(\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/util/_sandbox/context.py\", line 254, in init_sandbox_environments_sample\n    environments = await sample_init(task_name, config, metadata)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/util/_sandbox/docker/docker.py\", line 237, in sample_init\n    raise ex\n  File \"/usr/local/lib/python3.12/dist-packages/inspect_ai/util/_sandbox/docker/docker.py\", line 199, in sample_init\n    raise RuntimeError(\nRuntimeError: No services started.\nCompose up stderr:  Image inspect-scientific_c-ilpbazp-default Building \n Image inspect-scientific_c-ilpbazp-default Built \n Container inspect-scientific_c-ilpbazp-default-1 Creating \n Container inspect-scientific_c-ilpbazp-default-1 Created \n Container inspect-scientific_c-ilpbazp-default-1 Starting \n Container inspect-scientific_c-ilpbazp-default-1 Started \n Container inspect-scientific_c-ilpbazp-default-1 Waiting \ncontainer inspect-scientific_c-ilpbazp-default-1 exited (0)\n\n",
+      "traceback_ansi": "\u001b[31m┌─\u001b[0m\u001b[31m────────────────────\u001b[0m\u001b[31m \u001b[0m\u001b[1;31mTraceback \u001b[0m\u001b[1;2;31m(most recent call last)\u001b[0m\u001b[31m \u001b[0m\u001b[31m────────────────────\u001b[0m\u001b[31m─┐\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/\u001b[0m\u001b[1mrun.py\u001b[0m:479 in \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m task_run                                                                    \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/_util/\u001b[0m\u001b[1m_async.py\u001b[0m:76 in    \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m tg_collect                                                                  \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/_util/\u001b[0m\u001b[1m_async.py\u001b[0m:64 in    \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m run_task                                                                    \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/\u001b[0m\u001b[1mrun.py\u001b[0m:447 in \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m run_sample                                                                  \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/\u001b[0m\u001b[1mrun.py\u001b[0m:1258   \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m in task_run_sample                                                          \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/\u001b[0m\u001b[1mrun.py\u001b[0m:866 in \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m task_run_sample                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/lib/python3.12/\u001b[0m\u001b[1mcontextlib.py\u001b[0m:210 in __aenter__                         \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m   \u001b[2m207 \u001b[0m\u001b[2m│   │   \u001b[0m\u001b[2m# they are only needed for recreation, which is not possible \u001b[0m \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m   \u001b[2m208 \u001b[0m\u001b[2m│   │   \u001b[0m\u001b[94mdel\u001b[0m \u001b[96mself\u001b[0m.args, \u001b[96mself\u001b[0m.kwds, \u001b[96mself\u001b[0m.func                           \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m   \u001b[2m209 \u001b[0m\u001b[2m│   │   \u001b[0m\u001b[94mtry\u001b[0m:                                                          \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[31m> \u001b[0m210 \u001b[2m│   │   │   \u001b[0m\u001b[94mreturn\u001b[0m \u001b[94mawait\u001b[0m anext(\u001b[96mself\u001b[0m.gen)                              \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m   \u001b[2m211 \u001b[0m\u001b[2m│   │   \u001b[0m\u001b[1;4;94mexcept\u001b[0m\u001b[1;4m \u001b[0m\u001b[1;4;96mStopAsyncIteration\u001b[0m\u001b[1;4m:\u001b[0m                                    \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m   \u001b[2m212 \u001b[0m\u001b[2m│   │   │   \u001b[0m\u001b[1;4;94mraise\u001b[0m\u001b[1;4m \u001b[0m\u001b[1;4;96mRuntimeError\u001b[0m\u001b[1;4m(\u001b[0m\u001b[1;4;33m\"\u001b[0m\u001b[1;4;33mgenerator didn\u001b[0m\u001b[1;4;33m'\u001b[0m\u001b[1;4;33mt yield\u001b[0m\u001b[1;4;33m\"\u001b[0m\u001b[1;4m) \u001b[0m\u001b[1;4;94mfrom\u001b[0m\u001b[1;4;90m \u001b[0m\u001b[1;4;94mNone\u001b[0m    \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m   \u001b[2m213 \u001b[0m                                                                      \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/_eval/task/\u001b[0m\u001b[1msandbox.py\u001b[0m:10 \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m 1 in sandboxenv_context                                                     \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/util/_sandbox/\u001b[0m\u001b[1mcontext.py\u001b[0m \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m :254 in init_sandbox_environments_sample                                    \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/util/_sandbox/docker/\u001b[0m\u001b[1mdoc\u001b[0m \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[1mker.py\u001b[0m:237 in sample_init                                                   \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2m/usr/local/lib/python3.12/dist-packages/inspect_ai/util/_sandbox/docker/\u001b[0m\u001b[1mdoc\u001b[0m \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[1mker.py\u001b[0m:199 in sample_init                                                   \u001b[31m│\u001b[0m\n\u001b[31m└─────────────────────────────────────────────────────────────────────────────┘\u001b[0m\n\u001b[1;91mRuntimeError: \u001b[0mNo services started.\nCompose up stderr:  Image inspect-scientific_c-ilpbazp-default Building \n Image inspect-scientific_c-ilpbazp-default Built \n Container inspect-scientific_c-ilpbazp-default-\u001b[1;36m1\u001b[0m Creating \n Container inspect-scientific_c-ilpbazp-default-\u001b[1;36m1\u001b[0m Created \n Container inspect-scientific_c-ilpbazp-default-\u001b[1;36m1\u001b[0m Starting \n Container inspect-scientific_c-ilpbazp-default-\u001b[1;36m1\u001b[0m Started \n Container inspect-scientific_c-ilpbazp-default-\u001b[1;36m1\u001b[0m Waiting \ncontainer inspect-scientific_c-ilpbazp-default-\u001b[1;36m1\u001b[0m exited \u001b[1m(\u001b[0m\u001b[1;36m0\u001b[0m\u001b[1m)\u001b[0m\n\n"
+    },
+    "model": "anthropic/claude-opus-4-6",
+    "started_at": "2026-04-12T19:25:07+00:00",
+    "completed_at": "2026-04-12T19:25:09+00:00"
+  },
+  "logs/2026-04-12T19-30-05-00-00_scientific-coding-benchmark_FRXs3S82hsZRa53FQ2hy9D.eval": {
+    "eval_id": "ghDVsqdB78zjWk7q52bZ26",
+    "run_id": "f3uQy4qWCewVmAVgCx7W5m",
+    "task": "scientific_coding_benchmark",
+    "task_id": "FRXs3S82hsZRa53FQ2hy9D",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "anthropic/claude-opus-4-6",
+    "started_at": "2026-04-12T19:30:05+00:00",
+    "completed_at": "2026-04-12T20:09:52+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 0.25,
+      "params": {}
+    }
+  },
+  "logs/2026-04-12T21-25-39-00-00_scientific-coding-benchmark_7yjjd6ZLKmUgyHfTPpzhPF.eval": {
+    "eval_id": "862yjRMqd5gGyMwstjWf5q",
+    "run_id": "YWZiFUgtN3D4BsmPLJszQt",
+    "task": "scientific_coding_benchmark",
+    "task_id": "7yjjd6ZLKmUgyHfTPpzhPF",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "google/gemini-3.1-pro-preview-customtools",
+    "started_at": "2026-04-12T21:25:39+00:00",
+    "completed_at": "2026-04-12T22:27:21+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 0.75,
+      "params": {}
+    }
+  },
+  "logs/2026-04-13T03-11-49-00-00_scientific-coding-benchmark_5j9ZnFDVMeAA4FUQ6V23kv.eval": {
+    "eval_id": "Ua8CFbUULSfQhQ633tfJKN",
+    "run_id": "EEZPnEGWTAoj9vUwF5aC23",
+    "task": "scientific_coding_benchmark",
+    "task_id": "5j9ZnFDVMeAA4FUQ6V23kv",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "anthropic/claude-opus-4-6",
+    "started_at": "2026-04-13T03:11:49+00:00",
+    "completed_at": "2026-04-13T04:05:43+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 1.0,
+      "params": {}
+    }
+  },
+  "logs/2026-04-12T19-25-54-00-00_scientific-coding-benchmark_jDxJxfGdfUaJxo6HDpEPpg.eval": {
+    "eval_id": "ST4PgXMmyQmQr6dYb6njJk",
+    "run_id": "9XjkC2VJdhQz6mon6f9XqY",
+    "task": "scientific_coding_benchmark",
+    "task_id": "jDxJxfGdfUaJxo6HDpEPpg",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "anthropic/claude-opus-4-6",
+    "started_at": "2026-04-12T19:25:54+00:00",
+    "completed_at": "2026-04-12T19:26:06+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 0.0,
+      "params": {}
+    }
+  },
+  "2026-04-13T00-17-29-00-00_scientific-coding-benchmark_9LJbEwE92GDHQdzNRBRgew.eval": {
+    "eval_id": "5nhRijiJnngak5N4DfKWUH",
+    "run_id": "QbRSFrzj3jBHdHJwhDA3DN",
+    "task": "scientific_coding_benchmark",
+    "task_id": "9LJbEwE92GDHQdzNRBRgew",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "anthropic/claude-opus-4-6",
+    "started_at": "2026-04-13T00:17:29+00:00",
+    "completed_at": "2026-04-13T01:19:58+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 1.0,
+      "params": {}
+    }
+  },
+  "2026-04-13T00-17-34-00-00_scientific-coding-benchmark_PAA8yHYQBLqkRTuB52fEA9.eval": {
+    "eval_id": "7THyXfMW6HA8n7BUVo54MX",
+    "run_id": "GnwbNfepwJNLHPy5aKTCpH",
+    "task": "scientific_coding_benchmark",
+    "task_id": "PAA8yHYQBLqkRTuB52fEA9",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "google/gemini-3.1-pro-preview-customtools",
+    "started_at": "2026-04-13T00:17:34+00:00",
+    "completed_at": "2026-04-13T00:27:17+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 1.0,
+      "params": {}
+    }
+  },
+  "2026-04-13T00-17-31-00-00_scientific-coding-benchmark_Dj7XueV4aacoXHLGyz786F.eval": {
+    "eval_id": "NkYW5igKuUiWuzrj5HjCtq",
+    "run_id": "MM2v7rcUiK8YZhUCPzF6QZ",
+    "task": "scientific_coding_benchmark",
+    "task_id": "Dj7XueV4aacoXHLGyz786F",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "openai/gpt-5.4",
+    "started_at": "2026-04-13T00:17:31+00:00",
+    "completed_at": "2026-04-13T00:24:27+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 0.5,
+      "params": {}
+    }
+  },
+  "2026-04-12T21-24-17-00-00_scientific-coding-benchmark_KcmvtCq5NbMHoxaoZWJcJj.eval": {
+    "eval_id": "JWDe5MdEWxvnTPW2r3WZVN",
+    "run_id": "VoyCshchNqHcCgcmDSNCva",
+    "task": "scientific_coding_benchmark",
+    "task_id": "KcmvtCq5NbMHoxaoZWJcJj",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "invalidated": false,
+    "model": "anthropic/claude-opus-4-6",
+    "started_at": "2026-04-12T21:24:17+00:00",
+    "completed_at": "2026-04-12T22:11:18+00:00",
+    "primary_metric": {
+      "name": "structural_score",
+      "value": 1.0,
+      "params": {}
+    }
+  }
+}
